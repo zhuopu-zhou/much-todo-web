@@ -18,7 +18,7 @@ exports.createTask = (req, res) => {
 
 exports.getTask = (req, res) => {
   const db = connectDb();
-  db.collection("tasks")
+  db.collection("university-email-domains")
     .get()
     .then((snapshot) => {
       const taskList = snapshot.docs.map((doc) => {
